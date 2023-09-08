@@ -30,3 +30,5 @@ gulp.task('default', gulp.series('build'));
 gulp.task('watch', gulp.series('default', function watch() {
     gulp.watch(['src/**/*.ts', 'src/**/*.json'], gulp.series('default'));
 }));
+
+gulp.task('default', gulp.series('watch'));
